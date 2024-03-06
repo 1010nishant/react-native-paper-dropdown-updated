@@ -22,8 +22,8 @@ import React, {
   useCallback,
   Fragment,
 } from "react";
-import { Theme } from "react-native-paper/lib/typescript/types";
-import { TextInputProps } from "react-native-paper/lib/typescript/components/TextInput/TextInput";
+import { InternalTheme } from "react-native-paper/lib/typescript/types";
+import { Props } from "react-native-paper/lib/typescript/components/TextInput/TextInput";
 
 type Without<T, K> = Pick<T, Exclude<keyof T, K>>;
 
@@ -47,7 +47,7 @@ export interface DropDownPropsInterface {
   dropDownContainerMaxHeight?: number;
   dropDownContainerHeight?: number;
   activeColor?: string;
-  theme?: Theme;
+  theme?: InternalTheme;
   dropDownStyle?: ViewStyle;
   dropDownItemSelectedTextStyle?: TextStyle;
   dropDownItemSelectedStyle?: ViewStyle;
@@ -56,10 +56,10 @@ export interface DropDownPropsInterface {
   accessibilityLabel?: string;
 }
 
-type TextInputPropsWithoutTheme = Without<TextInputProps, "theme">;
+type TextInputPropsWithoutTheme = Without<Props, "theme">;
 
 const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
-  (props, ref) => {
+  (props) => {
     const activeTheme = useTheme();
     const {
       multiSelect = false,
@@ -149,7 +149,6 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
         theme={theme}
         anchor={
           <TouchableRipple
-            ref={ref}
             onPress={showDropDown}
             onLayout={onLayout}
             rippleColor={rippleColor}
@@ -164,7 +163,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                 pointerEvents={"none"}
                 theme={theme}
                 right={
-                  <TextInput.Icon name={visible ? "menu-up" : "menu-down"} />
+                  <TextInput.Icon icon={visible ? "menu-up" : "menu-down"} />
                 }
                 {...inputProps}
               />
@@ -209,7 +208,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                     titleStyle={{
                       color: isActive(_item.value)
                         ? activeColor || (theme || activeTheme).colors.primary
-                        : (theme || activeTheme).colors.text,
+                        : (theme || activeTheme).colors.onSurface,
                       ...(isActive(_item.value)
                         ? dropDownItemSelectedTextStyle
                         : dropDownItemTextStyle),
