@@ -8,7 +8,9 @@
   "main": "dist/DropDown.js",
   "types": "dist/DropDown.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "npm run copy-dts && tsc",
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" dist",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -32,10 +34,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
+    "@types/react": "*",
     "react": "*",
     "react-native": "*",
     "react-native-paper": "*",
-    "@types/react": "*",
     "typescript": "*"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
