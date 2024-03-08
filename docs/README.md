@@ -1,9 +1,9 @@
-# react-native-paper-dropdown
+# react-native-paper-dropdown-updated
 
-[![npm version](https://img.shields.io/npm/v/react-native-paper-dropdown.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-paper-dropdown.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown)
-[![npm](https://img.shields.io/npm/dt/react-native-paper-dropdown.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown)
-[![npm](https://img.shields.io/npm/l/react-native-paper-dropdown?style=for-the-badge)](https://github.com/fateh999/react-native-paper-dropdown/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-native-paper-dropdown-updated.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown-updated)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-paper-dropdown-updated.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown-updated)
+[![npm](https://img.shields.io/npm/dt/react-native-paper-dropdown-updated.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-paper-dropdown-updated)
+[![npm](https://img.shields.io/npm/l/react-native-paper-dropdown-updated?style=for-the-badge)](https://github.com/fateh999/react-native-paper-dropdown-updated/blob/master/LICENSE)
 
 Material Design Dropdown Component using React Native Paper
 
@@ -15,7 +15,7 @@ Material Design Dropdown Component using React Native Paper
 
 ```bash
 
-yarn add react-native-paper-dropdown
+yarn add react-native-paper-dropdown-updated
 
 ```
 
@@ -23,7 +23,7 @@ or
 
 ```
 
-npm i react-native-paper-dropdown
+npm i react-native-paper-dropdown-updated
 
 ```
 
