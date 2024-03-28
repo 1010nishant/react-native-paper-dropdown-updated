@@ -40,7 +40,7 @@ import {
 } from "react-native-paper";
 import React, { useState } from "react";
 import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
-import DropDown from "react-native-paper-dropdown";
+import DropDown from "react-native-paper-dropdown-updated";
 
 function App() {
   const [nightMode, setNightmode] = useState(false);
@@ -151,7 +151,7 @@ export default App;
 
 ## Demo
 
-![Demo](https://github.com/fateh999/react-native-paper-dropdown/blob/master/Demo.gif)
+![Demo](https://github.com/1010nishant/react-native-paper-dropdown-updated/blob/master/Demo.gif)
 
 ## Props
 
