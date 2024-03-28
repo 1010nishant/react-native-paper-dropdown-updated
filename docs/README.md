@@ -164,6 +164,7 @@ export default App;
     value: any;
     setValue: (_value: any) => void;
     label?: string | undefined;
+    rippleColor?: string | undefined;
     placeholder?: string | undefined;
     mode?: "outlined" | "flat" | undefined;
     inputProps?: TextInputPropsWithoutTheme;

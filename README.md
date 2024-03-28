@@ -31,7 +31,7 @@ npm i react-native-paper-dropdown-updated
 
 ## Documentation :
 
-- [https://fateh999.github.io/react-native-paper-dropdown](https://fateh999.github.io/react-native-paper-dropdown)
+- [https://1010nishant.github.io/react-native-paper-dropdown-updated](https://1010nishant.github.io/react-native-paper-dropdown-updated)
 
 ## Demo
 
