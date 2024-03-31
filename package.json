@@ -1,6 +1,6 @@
 {
   "name": "react-native-paper-dropdown-updated",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Dropdown component using React Native Paper TextInput and Menu, now also with multiselect",
   "files": [
     "dist"
